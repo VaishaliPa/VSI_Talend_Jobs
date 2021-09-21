@@ -6,12 +6,12 @@
     <groupId>org.example.vp_talend_jobs</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.2.1</version>
-    <relativePath>../../../../</relativePath>
+    <relativePath>../../../</relativePath>
   </parent>
   <groupId>org.example.vp_talend_jobs.job</groupId>
-  <artifactId>WMS_EDI_FILE_LOAD</artifactId>
+  <artifactId>Address_phone_email</artifactId>
   <version>0.1.0</version>
-  <name>VP_TALEND_JOBS WMS_EDI_FILE_LOAD-0.1.0 (0.1,Job Designs)</name>
+  <name>VP_TALEND_JOBS Address_phone_email-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -19,12 +19,12 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>vp_talend_jobs</talend.project.name.lowercase>
-    <talend.job.path>vp_talend_jobs/wms_edi_file_load_0_1</talend.job.path>
+    <talend.job.path>vp_talend_jobs/address_phone_email_0_1</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>VP_TALEND_JOBS</talend.project.name>
     <talend.product.version>7.2.1.20190725_0259</talend.product.version>
-    <talend.job.finalName>wms_edi_file_load_0_1</talend.job.finalName>
+    <talend.job.finalName>address_phone_email_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.vp_talend_jobs.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.vp_talend_jobs.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,10 +33,10 @@
     <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>WMS_EDI_FILE_LOAD</talend.job.name>
-    <talend.job.id>_yplmkIcmEeuAaIeH-Zru9w</talend.job.id>
+    <talend.job.name>Address_phone_email</talend.job.name>
+    <talend.job.id>_adodkAwoEey6b48kZphnvw</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>development2/</talend.job.folder>
+    <talend.job.folder></talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
@@ -213,6 +213,11 @@
       <version>2.2.1</version>
     </dependency>
     <dependency>
+      <groupId>net.sourceforge.jtds</groupId>
+      <artifactId>jtds</artifactId>
+      <version>1.3.1-patch-20190523</version>
+    </dependency>
+    <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.17</version>
@@ -284,12 +289,12 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>talend_file_enhanced_20070724</artifactId>
+      <artifactId>talend_DB_mssqlUtil-1.3-20190523</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>talendcsv</artifactId>
+      <artifactId>talend_file_enhanced_20070724</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
